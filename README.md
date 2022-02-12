@@ -2,71 +2,6 @@
 
 # mTC - NFT Marketplace
 
-This is an open decentralized NFT Marketplace built with smart contracts powered by Ethereum. It basically consists in an open platform where each user can mint his own NFT and expose it on a marketplace.
-
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [The Project](#the-project)
-- [Resources](#resources)
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### The repository
-
-First, you will need to `clone` or `fork` the repository into your Github account:
-
-<img src="https://docs.github.com/assets/images/help/repository/fork_button.jpg" alt="Fork on GitHub" width='450'>
-
-```
-$ git clone https://github.com/miquelTC/nft-marketplace.git
-```
-
-### Installing
-
-First, you will need to install the dependencies with: `npm install`.
-
-Run the following command in your terminal after cloning the main repo:
-
-```
-$ npm install
-```
-
-Then, you will need to install Truffle globally by running the following command int your terminal:
-
-```
-$ npm install -g truffle
-```
-
-### Running the Tests
-
-First, you will have to compile the smart contracts by running the following command in your terminal:
-
-```
-$ truffle compile
-```
-
-Then you will have to install and run Ganache to run your blockchain locally:
-
-https://www.trufflesuite.com/ganache
-
-Then, the tests that validate your solution can be executed by runing the following
-command:
-
-```
-$ truffle test
-```
-
-### Deployment on Local Blockchain
-
-Deploy the contracts on your Ganache local blockchain by running the following command:
-
-```
-$ truffle migrate
-```
-
 ### Opening the User Interface
 
 First of all, it is required to install Metamask wallet as a browser extension: https://metamask.io/
@@ -83,27 +18,6 @@ Finally you just need to run the following command in your terminal to open the 
 ```
 $ npm start
 ```
-
-### Deployment on Public Network
-
-In order to deploy your smart contract, you must create your .env file and specify:
-
-- `PRIVATE_KEYS` --> Private Key of the account you are using to deploy (typically the first one in the list of Ganache)
-- `INFURA_API_KEY` --> API key provided by Infura: https://infura.io
-
-Then, you will need to run the following command (let's use the testnet Ropsten in this example, remember to request some Ether for your account using a faucet):
-
-```
-$ truffle migrate --network ropsten
-```
-
-Finally you can run the following command to generate the build artifacts of your User Interface and then deploy to your favourite host:
-
-```
-npm run build
-```
-
-
 ### Technology stack
 
 - `Solidity`
